@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.light-container {
+  height: 100vh;
+  padding-top: 80px;
+  background-color: #aabfca;
+}
+
+.light-inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 220px;
+  height: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.light-inner::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15px;
+  height: 30px;
+  background-color: #fff;
+}
+
+.light-unit {
+  position: relative;
+  width: 80%;
+  height: 40%;
+  background-color: #353434;
+  border-radius: 5px;
+}
+
+.light-unit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 7rem;
+}
+
+.light-unit.none::before {
+  color: #000;
+}
+
+.light-stop::before {
+  content: "\f183";
+  color: #e73737;
+}
+
+.light-go::before {
+  content: "\f554";
+  color: #31d331;
+}
+/*# sourceMappingURL=style.css.map */
